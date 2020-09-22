@@ -1,0 +1,23 @@
+{
+  "name": "repro-rollup-commonjs-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "graphql": "^15.3.0",
+    "graphql-tag": "^2.11.0",
+    "rollup": "^2.28.1",
+    "sirv-cli": "^1.0.6"
+  },
+  "dependencies": {
+    "systemjs": "^6.6.1"
+  },
+  "scripts": {
+    "start": "rollup -c && sirv --dev ."
+  }
+}
