@@ -1,3 +1,7 @@
-import gql from 'graphql-tag';
+var empty = require("./empty");
 
-console.log("gql:", gql);
+Object.keys(empty).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  exports[key] = empty[key];
+});
